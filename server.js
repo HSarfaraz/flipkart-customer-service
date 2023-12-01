@@ -24,15 +24,20 @@ app.get("/", verifyAPIKey, (req, res) => {
 });
 
 app.get("/customers", verifyAPIKey, (req, res) => {
-  let sql = "select * from flipkartcustomerdb.customer";
+  let sql = "SELECT * FROM flipkartcustomerdb.customer";
   db.query(sql, (error, data) => {
     if (error) return res.status(500).send(error);
+
+    data.forEach((customer) => {
+      customer.password = "********";
+    });
+
     res.status(200).send(data);
   });
 });
 
 app.put("/customers", verifyAPIKey, (req, res) => {
-  const id = req.params.id;
+  const id = req.body.id;
   const customer = req.body;
 
   let sql = "UPDATE flipkartcustomerdb.customer SET ? WHERE id = ?";
@@ -53,23 +58,6 @@ app.post("/customers", verifyAPIKey, (req, res) => {
     username: req.body.firstname + req.body.lastname,
     password: "qwertyuiop",
   };
-
-  // Check for required fields
-  const requiredFields = [
-    "firstname",
-    "lastname",
-    "mobile",
-    "email",
-    "address",
-    "pincode",
-  ];
-  const missingFields = requiredFields.filter((field) => !customer[field]);
-
-  if (missingFields.length > 0) {
-    return res
-      .status(400)
-      .json({ error: `Missing required fields: ${missingFields.join(", ")}` });
-  }
 
   let sql = "INSERT INTO flipkartcustomerdb.customer SET ?";
   db.query(sql, customer, (error, data) => {
