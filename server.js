@@ -23,19 +23,16 @@ app.get("/", verifyAPIKey, (req, res) => {
   res.send("Flipkart customer service");
 });
 
-app.get("/customer", verifyAPIKey, (req, res) => {
+app.get("/customers", verifyAPIKey, (req, res) => {
   let sql = "select * from flipkartcustomerdb.customer";
   db.query(sql, (error, data) => {
     if (error) return res.status(500).send(error);
     res.status(200).send(data);
   });
-  res.send("get the customer details");
 });
 
 app.put("/customers", verifyAPIKey, (req, res) => {
   const id = req.params.id;
-  console.log(id);
-
   const customer = req.body;
 
   let sql = "UPDATE flipkartcustomerdb.customer SET ? WHERE id = ?";
@@ -43,12 +40,37 @@ app.put("/customers", verifyAPIKey, (req, res) => {
     if (error) return res.status(500).send(error);
     res.status(201).send(customer);
   });
-
-  res.send("modify the customer details");
 });
 
 app.post("/customers", verifyAPIKey, (req, res) => {
-  const customer = req.body;
+  const customer = {
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+    mobile: req.body.mobile,
+    email: req.body.email,
+    address: req.body.address,
+    pincode: req.body.pincode,
+    username: req.body.firstname + req.body.lastname,
+    password: "qwertyuiop",
+  };
+
+  // Check for required fields
+  const requiredFields = [
+    "firstname",
+    "lastname",
+    "mobile",
+    "email",
+    "address",
+    "pincode",
+  ];
+  const missingFields = requiredFields.filter((field) => !customer[field]);
+
+  if (missingFields.length > 0) {
+    return res
+      .status(400)
+      .json({ error: `Missing required fields: ${missingFields.join(", ")}` });
+  }
+
   let sql = "INSERT INTO flipkartcustomerdb.customer SET ?";
   db.query(sql, customer, (error, data) => {
     if (error) return res.status(500).send(error);

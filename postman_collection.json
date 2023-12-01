@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "7fbf1d5a-62f9-4630-9808-8806a53035eb",
+		"name": "flipkart-customer-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27400123"
+	},
+	"item": [
+		{
+			"name": "https://localhost:3500",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3500",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3500"
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:3500",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:3500",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3500"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-rhuT/7htqwnDuyS8qv+SebkPQps\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 11:59:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Flipkart customer service"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:3500/customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3500/customers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:3500/customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:3500/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "193"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c1-sxKpiXHNzzfZi7Bb/20lV5NDd/M\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:22:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstname\": \"Sarfaraz\",\n        \"lastname\": \"Hussain\",\n        \"mobile\": \"+91 9234567893\",\n        \"email\": \"m@b.com\",\n        \"address\": \"Hyderabad\",\n        \"pincode\": \"5000093\",\n        \"username\": \"SarfarazHussain\",\n        \"password\": \"qwertyuiop\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:3500/customers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"firstname\":\"Deepak\",\r\n   \"lastname\":\"Sigh\",\r\n   \"mobile\":\"+91 9234567895\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Gwaliar\",\r\n   \"pincode\":\"5000023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3500/customers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:3500/customers",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"firstname\":\"Deepak\",\r\n   \"lastname\":\"Sigh\",\r\n   \"mobile\":\"+91 9234567895\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Gwaliar\",\r\n   \"pincode\":\"5000023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:3500/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "172"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ac-JkwFLtN/ur0qRPLrcGLDlDdr/Uc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:33:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstname\": \"Deepak\",\n    \"lastname\": \"Sigh\",\n    \"mobile\": \"+91 9234567895\",\n    \"email\": \"m@b.com\",\n    \"address\": \"Gwaliar\",\n    \"pincode\": \"5000023\",\n    \"username\": \"DeepakSigh\",\n    \"password\": \"qwertyuiop\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:3500/customers",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\" :2,\r\n   \"firstname\":\"Kamran\",\r\n   \"lastname\":\"Hussain\",\r\n   \"mobile\":\"+91 9234567893\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Hyderabad\",\r\n   \"pincode\":\"5000093\",\r\n   \"username\":\"KamranHussain\",\r\n   \"password\":\"qwertyuiop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3500/customers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:3500/customers",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\" :2,\r\n   \"firstname\":\"Kamran\",\r\n   \"lastname\":\"Hussain\",\r\n   \"mobile\":\"+91 9234567893\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Hyderabad\",\r\n   \"pincode\":\"5000093\",\r\n   \"username\":\"KamranHussain\",\r\n   \"password\":\"qwertyuiop\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:3500/customers",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "187"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bb-Lki3L6NkobtXX4/LmBAMEXtarVY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:40:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"firstname\": \"Kamran\",\n    \"lastname\": \"Hussain\",\n    \"mobile\": \"+91 9234567893\",\n    \"email\": \"m@b.com\",\n    \"address\": \"Hyderabad\",\n    \"pincode\": \"5000093\",\n    \"username\": \"KamranHussain\",\n    \"password\": \"qwertyuiop\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:3500/customers",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:3500/customers/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:3500/customers",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:3500/customers/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"customers",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-rR0dJrnVz8u62R6AkjD3AclkSfI\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 12:42:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "customer od 2 is deleted"
+				}
+			]
+		}
+	]
+}
