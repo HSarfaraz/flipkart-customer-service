@@ -14,7 +14,7 @@
 - curl
 
 
-`npm install express mysql dotenv nodemon https fs curl --save`  
+`npm install express mysql dotenv nodemon https fs curl jsonwebtoken body-parser --save`  
 
 ### Files details
 - server.js: contain the details about RESTful end points

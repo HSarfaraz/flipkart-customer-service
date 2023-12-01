@@ -1,20 +1,26 @@
 require("dotenv").config();
+const jwt = require("jsonwebtoken");
+const secretKey = process.env.SECRET_KEY;
 
-function verifyAPIKey(req, res, next) {
-  const apiKey = req.headers["x-api-key"];
+function verifyToken(req, res, next) {
+  const token = req.headers["authorization"];
 
-  if (!apiKey) {
-    return res
-      .status(403)
-      .send("Kindly provide the x-api-key to return the api!");
+  if (!token) {
+    return res.status(403).json({ message: "No token provided" });
   }
 
-  if (apiKey !== process.env.X_API_KEY)
-    return res.status(401).send("Invalid x-api-key");
+  jwt.verify(token, secretKey, (err, decoded) => {
+    if (err) {
+      return res.status(401).json({
+        message: "Failed to authenticate token. Please provide correct token",
+      });
+    }
 
-  next();
+    req.user = decoded;
+    next();
+  });
 }
 
 module.exports = {
-  verifyAPIKey,
+  verifyToken,
 };

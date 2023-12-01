@@ -12,8 +12,8 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "x-api-key",
-						"value": "mysecretapikey",
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 						"type": "text"
 					}
 				],
@@ -33,8 +33,8 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "x-api-key",
-								"value": "mysecretapikey",
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 								"type": "text"
 							}
 						],
@@ -69,7 +69,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 01 Dec 2023 11:59:18 GMT"
+							"value": "Fri, 01 Dec 2023 15:52:54 GMT"
 						},
 						{
 							"key": "Connection",
@@ -91,8 +91,8 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "x-api-key",
-						"value": "mysecretapikey",
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 						"type": "text"
 					}
 				],
@@ -115,8 +115,8 @@
 						"method": "GET",
 						"header": [
 							{
-								"key": "x-api-key",
-								"value": "mysecretapikey",
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 								"type": "text"
 							}
 						],
@@ -146,15 +146,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "193"
+							"value": "742"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"c1-sxKpiXHNzzfZi7Bb/20lV5NDd/M\""
+							"value": "W/\"2e6-BsSBYn0vc/xS+lj1YhCAVPuTzBY\""
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 01 Dec 2023 12:22:22 GMT"
+							"value": "Fri, 01 Dec 2023 15:54:40 GMT"
 						},
 						{
 							"key": "Connection",
@@ -166,7 +166,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"id\": 1,\n        \"firstname\": \"Sarfaraz\",\n        \"lastname\": \"Hussain\",\n        \"mobile\": \"+91 9234567893\",\n        \"email\": \"m@b.com\",\n        \"address\": \"Hyderabad\",\n        \"pincode\": \"5000093\",\n        \"username\": \"SarfarazHussain\",\n        \"password\": \"qwertyuiop\"\n    }\n]"
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstname\": \"Sarfaraz\",\n        \"lastname\": \"Hussain\",\n        \"mobile\": \"+91 9234567893\",\n        \"email\": \"m@b.com\",\n        \"address\": \"Hyderabad\",\n        \"pincode\": \"5000093\",\n        \"username\": \"SarfarazHussain\",\n        \"password\": \"********\"\n    },\n    {\n        \"id\": 3,\n        \"firstname\": \"Aamer Soahil\",\n        \"lastname\": \"Chduahry\",\n        \"mobile\": \"+91 9234567895\",\n        \"email\": \"m@b.com\",\n        \"address\": \"Sydney\",\n        \"pincode\": \"5000093\",\n        \"username\": \"Aamer SoahilChduahry\",\n        \"password\": \"********\"\n    },\n    {\n        \"id\": 4,\n        \"firstname\": \"Deepak\",\n        \"lastname\": \"Sigh\",\n        \"mobile\": \"+91 9234567895\",\n        \"email\": \"m@b.com\",\n        \"address\": \"Gwaliar\",\n        \"pincode\": \"5000023\",\n        \"username\": \"DeepakSigh\",\n        \"password\": \"********\"\n    },\n    {\n        \"id\": 5,\n        \"firstname\": \"Rinku\",\n        \"lastname\": \"Sigh\",\n        \"mobile\": \"+91 9234567896\",\n        \"email\": \"m@b.com\",\n        \"address\": \"Aligagh\",\n        \"pincode\": \"5000023\",\n        \"username\": \"RinkuSigh\",\n        \"password\": \"********\"\n    }\n]"
 				}
 			]
 		},
@@ -176,14 +176,14 @@
 				"method": "POST",
 				"header": [
 					{
-						"key": "x-api-key",
-						"value": "mysecretapikey",
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"firstname\":\"Deepak\",\r\n   \"lastname\":\"Sigh\",\r\n   \"mobile\":\"+91 9234567895\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Gwaliar\",\r\n   \"pincode\":\"5000023\"\r\n}",
+					"raw": "{\r\n   \"firstname\":\"Siraj\",\r\n   \"lastname\":\"Chaudhary\",\r\n   \"mobile\":\"+91 9234567866\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Nanded\",\r\n   \"pincode\":\"2000023\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -209,14 +209,14 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "x-api-key",
-								"value": "mysecretapikey",
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \"firstname\":\"Deepak\",\r\n   \"lastname\":\"Sigh\",\r\n   \"mobile\":\"+91 9234567895\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Gwaliar\",\r\n   \"pincode\":\"5000023\"\r\n}",
+							"raw": "{\r\n   \"firstname\":\"Siraj\",\r\n   \"lastname\":\"Chaudhary\",\r\n   \"mobile\":\"+91 9234567866\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Nanded\",\r\n   \"pincode\":\"2000023\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -249,15 +249,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "172"
+							"value": "179"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"ac-JkwFLtN/ur0qRPLrcGLDlDdr/Uc\""
+							"value": "W/\"b3-zEMGx24QdMV9mLjs6LUw26aRyrY\""
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 01 Dec 2023 12:33:25 GMT"
+							"value": "Fri, 01 Dec 2023 15:56:03 GMT"
 						},
 						{
 							"key": "Connection",
@@ -269,7 +269,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"firstname\": \"Deepak\",\n    \"lastname\": \"Sigh\",\n    \"mobile\": \"+91 9234567895\",\n    \"email\": \"m@b.com\",\n    \"address\": \"Gwaliar\",\n    \"pincode\": \"5000023\",\n    \"username\": \"DeepakSigh\",\n    \"password\": \"qwertyuiop\"\n}"
+					"body": "{\n    \"firstname\": \"Siraj\",\n    \"lastname\": \"Chaudhary\",\n    \"mobile\": \"+91 9234567866\",\n    \"email\": \"m@b.com\",\n    \"address\": \"Nanded\",\n    \"pincode\": \"2000023\",\n    \"username\": \"SirajChaudhary\",\n    \"password\": \"qwertyuiop\"\n}"
 				}
 			]
 		},
@@ -279,14 +279,14 @@
 				"method": "PUT",
 				"header": [
 					{
-						"key": "x-api-key",
-						"value": "mysecretapikey",
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"id\" :2,\r\n   \"firstname\":\"Kamran\",\r\n   \"lastname\":\"Hussain\",\r\n   \"mobile\":\"+91 9234567893\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Hyderabad\",\r\n   \"pincode\":\"5000093\",\r\n   \"username\":\"KamranHussain\",\r\n   \"password\":\"qwertyuiop\"\r\n}",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"firstname\": \"SarfarazHussain\",\r\n        \"lastname\": \"Chaudhary\",\r\n        \"mobile\": \"+91 9234567893\",\r\n        \"email\": \"m@b.com\",\r\n        \"address\": \"Hyderabad\",\r\n        \"pincode\": \"5000093\",\r\n        \"username\": \"SarfarazHussainChaudhary\",\r\n        \"password\": \"********\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -312,14 +312,14 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "x-api-key",
-								"value": "mysecretapikey",
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"id\" :2,\r\n   \"firstname\":\"Kamran\",\r\n   \"lastname\":\"Hussain\",\r\n   \"mobile\":\"+91 9234567893\",\r\n   \"email\":\"m@b.com\",\r\n   \"address\":\"Hyderabad\",\r\n   \"pincode\":\"5000093\",\r\n   \"username\":\"KamranHussain\",\r\n   \"password\":\"qwertyuiop\"\r\n}",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"firstname\": \"SarfarazHussain\",\r\n        \"lastname\": \"Chaudhary\",\r\n        \"mobile\": \"+91 9234567893\",\r\n        \"email\": \"m@b.com\",\r\n        \"address\": \"Hyderabad\",\r\n        \"pincode\": \"5000093\",\r\n        \"username\": \"SarfarazHussainChaudhary\",\r\n        \"password\": \"********\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -352,15 +352,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "187"
+							"value": "207"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"bb-Lki3L6NkobtXX4/LmBAMEXtarVY\""
+							"value": "W/\"cf-yWOh4x8bOpRGAflLR7FLQ9n+UJc\""
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 01 Dec 2023 12:40:08 GMT"
+							"value": "Fri, 01 Dec 2023 15:57:46 GMT"
 						},
 						{
 							"key": "Connection",
@@ -372,7 +372,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"id\": 2,\n    \"firstname\": \"Kamran\",\n    \"lastname\": \"Hussain\",\n    \"mobile\": \"+91 9234567893\",\n    \"email\": \"m@b.com\",\n    \"address\": \"Hyderabad\",\n    \"pincode\": \"5000093\",\n    \"username\": \"KamranHussain\",\n    \"password\": \"qwertyuiop\"\n}"
+					"body": "{\n    \"id\": 1,\n    \"firstname\": \"SarfarazHussain\",\n    \"lastname\": \"Chaudhary\",\n    \"mobile\": \"+91 9234567893\",\n    \"email\": \"m@b.com\",\n    \"address\": \"Hyderabad\",\n    \"pincode\": \"5000093\",\n    \"username\": \"SarfarazHussainChaudhary\",\n    \"password\": \"********\"\n}"
 				}
 			]
 		},
@@ -382,13 +382,13 @@
 				"method": "DELETE",
 				"header": [
 					{
-						"key": "x-api-key",
-						"value": "mysecretapikey",
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://localhost:3500/customers/2",
+					"raw": "https://localhost:3500/customers/7",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -396,7 +396,7 @@
 					"port": "3500",
 					"path": [
 						"customers",
-						"2"
+						"7"
 					]
 				}
 			},
@@ -407,13 +407,13 @@
 						"method": "DELETE",
 						"header": [
 							{
-								"key": "x-api-key",
-								"value": "mysecretapikey",
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ1ODQ5LCJleHAiOjE3MDE0NDk0NDl9.eFYWvaaIvbhMSNgtnFSSPFK-zLUC-P2WwSBLchKaZiI",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://localhost:3500/customers/2",
+							"raw": "https://localhost:3500/customers/7",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -421,7 +421,7 @@
 							"port": "3500",
 							"path": [
 								"customers",
-								"2"
+								"7"
 							]
 						}
 					},
@@ -443,11 +443,11 @@
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"18-rR0dJrnVz8u62R6AkjD3AclkSfI\""
+							"value": "W/\"18-g2+VpTI/QvBRAXSEUW6zZsrAa50\""
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 01 Dec 2023 12:42:59 GMT"
+							"value": "Fri, 01 Dec 2023 15:58:34 GMT"
 						},
 						{
 							"key": "Connection",
@@ -459,7 +459,112 @@
 						}
 					],
 					"cookie": [],
-					"body": "customer od 2 is deleted"
+					"body": "customer od 7 is deleted"
+				}
+			]
+		},
+		{
+			"name": "https://localhost:3500/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "mysecretapikey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"sarfaraz\",\r\n    \"password\" : \"qwertyuiop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3500/api/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost:3500/api/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "mysecretapikey",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"sarfaraz\",\r\n    \"password\" : \"qwertyuiop\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:3500/api/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "169"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a9-x//kDyfjKQpMCpASsB54dkj/Lbw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Dec 2023 16:00:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmZhcmF6IiwiaWF0IjoxNzAxNDQ2NDE1LCJleHAiOjE3MDE0NDY0NzV9.ZipktjTZtiQC4gEeIOSOrDtM32pz1Xyw_7UcColMv08\"\n}"
 				}
 			]
 		}
